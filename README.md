@@ -1,2 +1,1 @@
-# folio.ghatak.github.io
-My portfolio website
+# My portfolio website
