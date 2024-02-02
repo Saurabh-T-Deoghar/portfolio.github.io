@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saurabh Thakur</title>
+
+  <!--stylesheets-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <!--stylesheets-->
+</head>
+
+<body data-bs-theme="dark">
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-3 me-5 disabled">PortFolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div style="padding-left: 1.5rem" class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+          <li class="nav-item fs-4 me-3">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item fs-4 me-3">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item fs-4 me-3">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item fs-4 me-3">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item fs-4 me-3">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <label class="toggle-switch">
+            <input type="checkbox" id="themeSwitch" />
+            <span class="slider">
+              <i class="bi bi-sun-fill slider-icon light"></i>
+              <i class="bi bi-moon-fill slider-icon dark"></i>
+            </span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2 d-grid gap-3" tabindex="0">
+    <!--=======Home section========-->
+    <div class="my-5" id="home">
+      <div class="p-5 text-left bg-body-tertiary">
+        <div class="container">
+          <img src="images/pic-400.png" class="img-fluid rounded float-end" alt="..." />
+        </div>
+        <div class="container py-5">
+          <h1 class="text-body-emphasis display-2">
+            Hi, I'm Saurabh Thakur
+          </h1>
+          <p class="text-left col-lg-8 lead display-5">
+            <span>I like to <span id="typewriter"></span></span>
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="images/Subhajit Ghatak Resume.pdf" target="_blank"><button type="button"
+                class="btn btn-outline-info btn-lg px-4" style="text-decoration: none">
+                My Resume
+              </button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=======Home section=========-->
+    <!--=======About section========--->
+    <div class="my-5" id="about">
+      <div class="container">
+        <h1 class="display-1 text-body-emphasis lh-1 mb-4">About Me</h1>
+        <div class="row">
+          <div class="col">
+            <div class="tabs-container">
+              <ul class="nav nav-tabs mb-3 fw-medium fs-5" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <button class="nav-link active defaultOpen text-muted" id="bio-tab" data-bs-toggle="tab"
+                    data-bs-target="#bio" type="button" role="tab" aria-controls="bio" aria-selected="true">
+                    Bio
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link text-muted" id="education-tab" data-bs-toggle="tab"
+                    data-bs-target="#education" type="button" role="tab" aria-controls="education"
+                    aria-selected="false">
+                    Education
+                  </button>
+                </li>                
+                <li class="nav-item">
+                  <button class="nav-link text-muted" id="connect-tab" data-bs-toggle="tab" data-bs-target="#connect"
+                    type="button" role="tab" aria-controls="connect" aria-selected="false">
+                    Connect
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content fs-5">
+              <div class="tab-pane fade show active" id="bio" role="tabpanel" aria-labelledby="bio-tab">
+                <p>
+                  My name is Saurabh Thakur and I like to develope front-end
+                  & UI.
+                </p>
+                <p>
+                  <span class="text-info">Age:</span> 23 <br />
+                  <span class="text-info">Nationality:</span> India <br />
+                  <span class="text-info">Address:</span> Deoghar, Jharkhand
+                </p>
+                <p>
+                  Light Theme &#10060; <br />
+                  Dark Theme &#128076;
+                </p>
+              </div>
+              <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+                <p>
+                  I've completed my Master's Degree from Asansol Engineering College, Asansol, WestBengal.
+                </p>
+                <p>
+                  <span class="text-info">University:</span> Maulana Abul
+                  Kalam Azad University of Technology. <br />                  
+                  <span class="text-info">Cgpa:</span> 9.02. <br />
+                </p>
+              </div>              
+              <div class="tab-pane fade" id="connect" role="tabpanel" aria-labelledby="connect-tab">
+                <p>
+                  Links of my social media accounts are given here
+                  &#128073;&#128073;&#128073;&#128073;
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col text-center pt-4">
+            <img src="images/new-about.png" class="img-fluid pb-3" alt="...">
+            <br>                            
+            <a href="http://www.linkedin.com/in/subhajitghatak" target="_blank" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="linkedin" style="color: inherit; text-decoration: none"
+              class="fa-brands fa-linkedin-in fa-2x"></a>                        
+            <a href="https://www.linkedin.com/in/saurabh-thakur-3105b6195/" target="_blank" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="github" style="color: inherit; text-decoration: none"
+              class="fa-brands fa-github fa-2x"></a>                                    
+            <p>saurabht1230@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=======About section=========-->
+    <!--=======Project section=======-->
+    <div class="container py-5" id="projects">
+      <h1 class="display-1 text-body-emphasis lh-1 mb-4 justify-content-end">
+        Projects
+      </h1>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card rounded-4 shadow-lg">
+            <img src="images/p1.png" class="card-img-top rounded-4" alt="..." />
+            <div class="card-body justify-content-end">
+              <h4>Song Streaming App</h4>
+              <p class="card-text">
+                Stream any song of any genre(hip-hop my fav.) all over the
+                globe.
+              </p>              
+              <a href="https://song-stream-app.vercel.app/" target="_blank"
+                style="color: inherit; text-decoration: none" class="fa-solid fa-circle-play fa-2x rounded-circle"></a>
+              <a href="https://github.com/Saurabh-T-Deoghar/song-stream-app" target="_blank"
+                style="color: inherit; text-decoration: none" class="fa-brands fa-github fa-2x rounded-circle"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card rounded-4 shadow-lg">
+            <img src="images/p2.png" class="card-img-top rounded-4" alt="..." />
+            <div class="card-body">
+              <h4>Diabetes Prediction App</h4>
+              <p class="card-text">
+                Machine learning model that can predict diabetes of a person.
+              </p>
+              <a href="https://diabetets-prediction-machine-learning-sdci59yc24qvktu97ysvzn.streamlit.app/"
+                target="_blank" style="color: inherit; text-decoration: none"
+                class="fa-solid fa-circle-play fa-2x rounded-circle"></a>
+              <a href="https://github.com/Saurabh-T-Deoghar/song-stream-app" target="_blank"
+                style="color: inherit; text-decoration: none" class="fa-brands fa-github fa-2x rounded-circle"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card rounded-4 shadow-lg">
+            <img src="images/p3.png" class="card-img-top rounded-4" alt="..." />
+            <div class="card-body">
+              <h4>Weather App(Realtime)</h4>
+              <p class="card-text">
+                Search weather of any place all over the globe.
+              </p>              
+              <a href="https://weather-6szbxbh4x-saurabh-thakurs-projects.vercel.app/" target="_blank"
+                style="color: inherit; text-decoration: none" class="fa-solid fa-circle-play fa-2x rounded-circle"></a>
+              <a href="https://github.com/Saurabh-T-Deoghar/weather-app" target="_blank"
+                style="color: inherit; text-decoration: none" class="fa-brands fa-github fa-2x rounded-circle"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=======Project section=======-->
+    <!--=======Skills section========-->
+    <div class="px-4 text-center" id="skills">
+      <h1 class="display-1 fw-light text-body-emphasis mb-5">
+        <<span>/</span>Skills<span>></span>
+      </h1>
+      <div class="container marketing">
+        <div class="row">
+          <div class="col">
+            <img src="images/react.png" class="img-fluid" width="140" height="140" alt="..." />
+            <p>Front-End <br>
+              Love to design using HTML, CSS, JS(vanilla) .</p>
+          </div>
+          <div class="col">
+            <img src="images/cpp.png" class="img-fluid" width="140" height="140" alt="..." />
+            <p>
+              C++ <br>
+              Completed DSA using this language.</p>
+          </div>
+          <div class="col">
+            <img src="images/python.png" class="img-fluid" width="140" height="140" alt="..." />
+            <p>Python <br>
+              Completed basic machine learning projects.</p>
+          </div>
+          <div class="col">
+            <img src="images/mysql.png" class="img-fluid" width="140" height="140" alt="..." />
+            <p>MySQL <br>
+              Having basic knowledge on desigining a database.</p>
+          </div>
+          <div class="col">
+            <img src="images/c-lan.png" class="img-fluid" width="140" height="140" alt="..." />
+            <p>C <br>
+              My go-to language for problem solving.</p>
+          </div>
+          <div class="col">
+            <img src="images/github.png" class="img-fluid" width="140" height="140" alt="..." />
+            <p>Git/Github <br>
+              Used almost in every project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=======Skills section=======-->
+    <!--=======Contact section=======-->
+    <div class="px-4 py-2 mt-5 text-center" id="contact">
+      <div class="container">
+        <h1 class="display-1 fw-light text-body-emphasis text-center">
+          Contact Me
+        </h1>
+        <div class="row align-items-center g-lg-5 pt-4">
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form action="https://formspree.io/f/xbjngdky" method="POST"
+              class="p-4 p-md-5 border rounded-3 " style="background: rgba(0, 0, 0, 0.6);">
+              <div class="form-floating mb-3">
+                <input name="name" type="text" class="form-control" />
+                <label for="floatingInput"> Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input name="email" type="email" class="form-control" />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea name="message" class="form-control" cols="30" rows="10"></textarea>
+                <label for="floatingInput">Message</label>
+              </div>
+
+              <button name="myButton" class="w-100 btn btn-lg btn-info" type="submit">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=======Contact section=======-->
+  </div>
+  <!--===============scripts===============-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="script.js"></script>
+  <!--===============scripts===============-->
+</body>
+
+</html>
